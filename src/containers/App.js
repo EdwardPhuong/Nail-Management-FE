@@ -3,19 +3,23 @@ import { Route, Routes, BrowserRouter, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { path } from "../constants/constants";
-import HomePage from "../routes/HomePage";
-import "./App.css";
-import logo from "./logo.svg";
+import DashBoard from "../routes/DashBoard";
+import Login from "../routes/Login";
+import Redirector from "../routes/Redirector";
 
 class App extends React.Component {
 	render() {
+		console.log(this.props.isAuthenticatedRedux);
 		return (
 			<Fragment>
 				<BrowserRouter>
 					<div className="app-container">
 						<div className="app-content">
 							<Routes>
-								<Route path={path.HOMEPAGE} element={<HomePage />} />
+								<Route exact path="/" element={<Redirector />} />
+								<Route path="/dash-board" element={<DashBoard />} />
+
+								<Route path={path.LOGIN} element={<Login />} />
 							</Routes>
 						</div>
 					</div>
@@ -25,7 +29,9 @@ class App extends React.Component {
 	}
 }
 const mapStateToProps = (state) => {
-	return {};
+	return {
+		isAuthenticatedRedux: state.system.isAuthenticated,
+	};
 };
 
 const mapDispatchToProps = (dispatch) => {

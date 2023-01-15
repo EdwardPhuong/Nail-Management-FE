@@ -1,0 +1,79 @@
+.login-container {
+
+    .login-content {
+        background-image  : url("../assets//background-images/Colorful-Galaxy-Background-1.jpg");
+        background-repeat : no-repeat;
+        background-size   : cover;
+        display           : flex;
+        justify-content   : center;
+        align-items       : center;
+        font-size         : 1.2vw;
+        height            : 100vh;
+
+
+        .background-login-form {
+            background-color : white;
+            border-radius    : 2%;
+            width            : 25%;
+
+            .content-login-form {
+                // display        : flex;
+                // flex-direction : column;
+                padding : 25px 45px;
+
+                .header-login-form {
+                    margin-bottom : 15px;
+                    position      : relative;
+                    right         : 20px;
+                }
+
+                .title-login-form {
+                    text-transform : uppercase;
+                    text-align     : center;
+                }
+
+                .label-login {
+                    position : relative;
+                }
+
+                .input-login {
+                    margin-bottom : 15px;
+                    background    : unset !important;
+                    outline       : none;
+                    border        : none;
+                    border-bottom : 1px solid #eee;
+                    border-radius : unset;
+                    background    : unset;
+                    outline       : unset;
+                    box-shadow    : unset;
+                    padding       : unset;
+                }
+
+
+                .button-login {
+                    background      : linear-gradient(#141e30, #243b55);
+                    position        : relative;
+                    color           : #03e9f4;
+                    text-decoration : none;
+                    text-transform  : uppercase;
+                    overflow        : hidden;
+                    width           : 60%;
+                    height          : 15%;
+                    letter-spacing  : 0.5vw;
+                    font-size       : 1.2vw;
+                    border          : none;
+                    border-radius   : 3%;
+                    display         : flex;
+                    justify-content : center;
+                    align-items     : center;
+                }
+            }
+
+        }
+
+
+
+
+    }
+
+}

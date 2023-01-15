@@ -8,6 +8,7 @@ import { createStore } from "redux";
 import App from "./containers/App";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorker from "./serviceWorker";
+import "./styles/styles.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
