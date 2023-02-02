@@ -1,0 +1,76 @@
+.top-navigator-container {
+    display     : flex;
+    align-items : center;
+
+    .top-navigator-content {
+        height              : 15vh;
+        overflow            : hidden;
+        padding             : 0;
+        margin              : 0;
+        display             : flex;
+        // justify-content : center;
+        padding             : 15px;
+
+        .top-navigator-arrow-animation {
+
+            .top-navigator-navbar {
+                height                : 100%;
+                display               : flex;
+                align-items           : center;
+                justify-content       : center;
+                overflow              : hidden;
+                margin                : 0;
+                list-style            : none;
+                grid-template-columns : repeat(2, 1fr);
+                grid-template-rows    : repeat(2, 1fr);
+                gap                   : 15px;
+                background            : linear-gradient(to bottom right, rgb(94, 22, 105), rgb(14, 77, 93));
+                border-radius         : 50px;
+                padding               : 0 15px;
+
+
+                .top-navigator-item {
+                    padding         : 20px;
+                    min-width       : 14%;
+                    height          : 55%;
+                    background      : white;
+                    text-decoration : unset;
+                    color           : black;
+                    border-radius   : 10rem;
+                    display         : flex;
+                    justify-content : center;
+                    align-items     : center;
+                    scale           : 1;
+
+
+                    .top-navigator-text-decoration {
+                        text-decoration : unset !important;
+                        color           : black;
+                    }
+                }
+
+                .top-navigator-item-invisible {
+                    display : none;
+                }
+
+
+                .top-navigator-extended {
+                    color      : white;
+                    text-align : center;
+                    font-size  : 2em;
+                }
+
+                .top-navigator-unextended {
+                    position   : relative;
+                    color      : white;
+                    text-align : center;
+                    right      : 110px;
+                    font-size  : 2em;
+                }
+
+            }
+        }
+
+
+    }
+}

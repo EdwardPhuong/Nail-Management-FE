@@ -1,0 +1,79 @@
+.manage-Product-container {
+
+    .manage-Product-content {
+        height              : 100vh;
+        background          : linear-gradient(to bottom right, rgb(143, 223, 239), rgb(97, 216, 169));
+        display             : flex;
+        flex-direction      : column;
+        // justify-content : center;
+        align-items         : center;
+
+        .manage-Product-header {
+            text-align    : center;
+            font-size     : 1.5rem;
+            padding       : 15px;
+            border-bottom : 1px solid #333;
+            width         : 30%;
+
+        }
+
+        .manage-Product-body {
+            margin          : 3rem 12rem;
+            display         : flex;
+            justify-content : center;
+
+            .me-rate {
+                // background-color : unset;
+                display         : flex;
+                justify-content : space-around;
+                align-items     : center;
+                text-align      : center;
+                border-radius   : 15px;
+                width           : 35%;
+                color           : white;
+            }
+
+            .mp-rate-star {
+                color : yellow;
+            }
+
+
+
+            .me-button-submit {
+                margin-top : 2rem;
+                width      : 25%;
+
+            }
+        }
+
+        .manage-Product-left {}
+    }
+
+    .manage-Product-page {
+        background : linear-gradient(to bottom right, rgb(143, 223, 239), rgb(97, 216, 169));
+        height     : 100vh;
+
+        .manage-Product-body {
+            display     : flex;
+            align-items : center;
+
+            .me-button-create-Product {
+                margin : 15px;
+                width  : 15%;
+
+                .meb-create-Product {
+                    background-color : rgb(77, 156, 209);
+                    border           : unset;
+                    padding          : 10px;
+                    border-radius    : 10rem;
+                    height           : 70%;
+                }
+            }
+
+
+            .me-top-navigator {
+                width : 100%;
+            }
+        }
+    }
+}

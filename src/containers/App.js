@@ -6,6 +6,8 @@ import { path } from "../constants/constants";
 import DashBoard from "../routes/DashBoard";
 import Login from "../routes/Login";
 import Redirector from "../routes/Redirector";
+import ManageEmployee from "./components/ManageEmployee";
+import ManageProduct from "./components/ManageProduct";
 
 class App extends React.Component {
 	render() {
@@ -18,6 +20,8 @@ class App extends React.Component {
 							<Routes>
 								<Route exact path="/" element={<Redirector />} />
 								<Route path="/dash-board" element={<DashBoard />} />
+								<Route path="/manage-employee" element={<ManageEmployee />} />
+								<Route path="/manage-product" element={<ManageProduct />} />
 
 								<Route path={path.LOGIN} element={<Login />} />
 							</Routes>
